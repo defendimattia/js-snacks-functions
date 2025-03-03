@@ -17,7 +17,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 const onlyDefInitCharArray = (arr, char) => {
     const newArr = [];
     for (i = 0; i < arr.length; i++) {
-    if (char.toUpperCase() === arr[i][0]) newArr.push(arr[i]);
+        if (char.toUpperCase() === arr[i][0]) newArr.push(arr[i]);
     };
     return newArr
 };
