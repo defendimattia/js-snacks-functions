@@ -8,11 +8,21 @@ e buonasera se è sera (oltre le 17)
 const name = 'Mario';
 
 
+
 // Dichiara la funzione qui.
 
+const toGreet = () => {
+    let greetName = " "
+    const infoData = new Date;
+    const hour = infoData.getHours();
+    if (hour > 0 && hour < 13) return greetName = "buongiorno " + name
+    if (hour > 13 && hour < 17) return greetName = "buon pomeriggio " + name
+    if (hour > 17 && hour < 0) return greetName = "buonasera " + name   
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+const greet = toGreet()
+console.log(greet)
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
